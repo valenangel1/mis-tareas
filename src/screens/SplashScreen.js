@@ -9,7 +9,7 @@ const SplashScreen = () => {
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            navigation.replace('MainTabs')}, 10000);
+            navigation.replace('MainTabs')}, 8000);
             return () => clearTimeout(timer)
     })
     return (
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     },
     logo: {
         width: 1100,
-        height: 700,
+        height: 500,
         resizeMode: 'contain',
     }
 
