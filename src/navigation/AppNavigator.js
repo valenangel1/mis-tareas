@@ -12,10 +12,9 @@ const Tab = createBottomTabNavigator();
 const stack = createStackNavigator();
 
 const TabNavigator = () => {
-    return (<Tab.Navigator initialRouteName="Home">
-        <Tab.Screen name="Home" component={HomeScreen} options={{}}/>
-        <Tab.Screen name="Login" component={LoginScreen} options={{}}/>
-        <Tab.Screen name="Register" component={RegisterScreen} options={{}}/>
+    return (<Tab.Navigator initialRouteName="Inicio">
+        <Tab.Screen name="Inicio" component={HomeScreen} options={{}}/>
+
     </Tab.Navigator>)
 }
 
@@ -23,6 +22,8 @@ const AppNavigator = () => {
     return (
         <stack.Navigator initialRouteName="Splash">
             <stack.Screen name="Splash" component={SplashScreen} options={{headerShown: false}}/>
+            <stack.Screen name="Login" component={LoginScreen} options={{headerShown: false}}/>
+            <stack.Screen name="Register" component={RegisterScreen} options={{headerShown: false}}/>
             <stack.Screen name="MainTabs" component={TabNavigator} options={{headerShown: false}}/>
         </stack.Navigator>
     )

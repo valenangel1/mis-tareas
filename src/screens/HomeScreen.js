@@ -7,13 +7,10 @@ const HomeScreen = () => {
     
     return (
         <View style={styles.container}>
-            <Image source={require("../../assets/logo.png")} style={styles.logo} resizeMode="contain"/>
-            <Text style={styles.title}>Bienvenido a nuestra tienda</Text>
+            <Image source={require("../../assets/tareas.png")} style={styles.logo} resizeMode="contain"/>
+            <Text style={styles.title}>Mis tareas pendientes</Text>
             <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Login")}>
                 <Text style={styles.buttonText}>Iniciar Sesion</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={[styles.button, styles.registerButton]} onPress={() => navigation.navigate("Register")}>
-                <Text style={styles.buttonText}>Registrarse</Text>
             </TouchableOpacity>
         </View>
     )
@@ -64,3 +61,4 @@ const styles = StyleSheet.create({
 });
 
 export default HomeScreen
+

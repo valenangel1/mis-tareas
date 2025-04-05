@@ -2,6 +2,7 @@ import React, {useEffect} from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
+
 import react from "react";
 
 const SplashScreen = () => {
@@ -14,7 +15,7 @@ const SplashScreen = () => {
     })
     return (
         <View style={styles.container}>
-            <Image source={ require("../../assets/jardin.png")} style={styles.logo}/>
+            <Image source={ require("../../assets/tareas.png")} style={styles.logo}/>
         </View>
     )
 }
@@ -27,7 +28,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     logo: {
-        width: 1100,
+        width: 500,
         height: 500,
         resizeMode: 'contain',
     }
